@@ -1,1 +1,6 @@
-# legal-proof-format\n\nStatus: Draft\nLicense: CC BY 4.0\n\nSpecification coming soon.
+# legal-proof-format
+
+Status: Draft
+License: CC BY 4.0
+
+Specification coming soon.
