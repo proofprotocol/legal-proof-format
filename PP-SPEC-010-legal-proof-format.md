@@ -14,7 +14,7 @@
 
 This specification defines the Legal Attestation Format: the structured package by which a ProofBundle™ and its associated ProofRegister™ record are assembled for submission to regulators, auditors, legal proceedings, and compliance frameworks.
 
-A ProofBundle™ is a technical artifact. A Legal Attestation Package is the same artifact formatted and contextualized for non-technical consumers — regulators, counsel, auditors, boards — who need to act on it without running a verifier binary.
+A ProofBundle™ is a technical artifact. A Legal Attestation Package is the same artifact formatted and contextualized for non-technical consumers - regulators, counsel, auditors, boards - who need to act on it without running a verifier binary.
 
 ---
 
@@ -197,4 +197,4 @@ Castle Rock, Colorado
 
 ---
 
-*CC BY 4.0 — Attribution to Craig Ellrod / Nebulonium, Inc. required.*
+*CC BY 4.0 - Attribution to Craig Ellrod / Nebulonium, Inc. required.*
