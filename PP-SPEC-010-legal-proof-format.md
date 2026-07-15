@@ -4,7 +4,7 @@
 **Version:** 0.1 - Draft  
 **Status:** Draft  
 **License:** CC BY 4.0  
-**Maintained by:** Proof Economy Standards Alliance (PESA)  
+**Maintained by:** Proof Economy™ Standards Alliance (PESA)  
 **Repository:** https://github.com/proofprotocol/legal-proof-format  
 **Published:** 2026-07-13  
 
@@ -12,9 +12,9 @@
 
 ## Abstract
 
-This specification defines the Legal Attestation Format: the structured package by which a ProofBundle and its associated ProofRegister record are assembled for submission to regulators, auditors, legal proceedings, and compliance frameworks.
+This specification defines the Legal Attestation Format: the structured package by which a ProofBundle™ and its associated ProofRegister™ record are assembled for submission to regulators, auditors, legal proceedings, and compliance frameworks.
 
-A ProofBundle is a technical artifact. A Legal Attestation Package is the same artifact formatted and contextualized for non-technical consumers — regulators, counsel, auditors, boards — who need to act on it without running a verifier binary.
+A ProofBundle™ is a technical artifact. A Legal Attestation Package is the same artifact formatted and contextualized for non-technical consumers — regulators, counsel, auditors, boards — who need to act on it without running a verifier binary.
 
 ---
 
@@ -41,7 +41,7 @@ Draft. Subject to change before v1.0.
 
 Cryptographic proof is technically sound but legally inert without context. A regulator receiving a JSONL file of Ed25519-signed receipts cannot act on it without understanding what it proves, how it was produced, who witnessed it, and what standards it satisfies.
 
-The Legal Attestation Format bridges the technical and legal layers. It wraps a conformant ProofBundle in a structured package that answers the questions a non-technical decision-maker needs answered:
+The Legal Attestation Format bridges the technical and legal layers. It wraps a conformant ProofBundle™ in a structured package that answers the questions a non-technical decision-maker needs answered:
 
 - What was tested?
 - Who ran the test?
@@ -57,13 +57,13 @@ The Legal Attestation Format bridges the technical and legal layers. It wraps a 
 ```
 legal-attestation/
   cover.pdf              # Human-readable cover document
-  packet.json            # ProofBundle envelope
+  packet.json            # ProofBundle™ envelope
   evidence.jsonl         # Signed receipt chain
   verifier.txt           # Verifier output
   nist-pulse.json        # NIST Beacon anchors
   witness.json           # Witness attestation
-  proofregister.json     # ProofRegister anchor record
-  proofstamp.json        # ProofStamp token (if certified)
+  proofregister.json     # ProofRegister™ anchor record
+  proofstamp.json        # ProofStamp™ token (if certified)
   regulatory-mapping.json # Framework compliance mapping
   chain-of-custody.json  # Submission and handling record
 ```
@@ -78,8 +78,8 @@ The cover document is a human-readable PDF that summarizes:
 - Benchmark name and date
 - PES score and key metrics
 - Witness identity and affiliation
-- ProofRegister Record ID and URI
-- ProofStamp ID and URI (if certified)
+- ProofRegister™ Record ID and URI
+- ProofStamp™ ID and URI (if certified)
 - NIST Beacon pulse references
 - Verification instructions in plain language
 - Regulatory framework mappings
@@ -119,7 +119,7 @@ The cover document is not the proof. The evidence.jsonl and verifier.txt are the
 }
 ```
 
-Regulatory mappings are informational. They document which framework controls the ProofBundle evidence supports. They do not constitute legal advice or formal compliance certification.
+Regulatory mappings are informational. They document which framework controls the ProofBundle™ evidence supports. They do not constitute legal advice or formal compliance certification.
 
 ---
 
@@ -139,7 +139,7 @@ Regulatory mappings are informational. They document which framework controls th
     {
       "event": "submitted_to_proofregister",
       "timestamp": "RFC 3339 UTC",
-      "actor": "HACKERverse ProofRegister API",
+      "actor": "HACKERverse ProofRegister™ API",
       "anchor_pulse_index": 0
     },
     {
@@ -168,7 +168,7 @@ The Legal Attestation Package may be submitted as:
 - A PDF portfolio embedding all files as attachments
 - Direct API submission to a regulator's evidence portal where supported
 
-ProofRegister provides a Legal Attestation Package download endpoint:
+ProofRegister™ provides a Legal Attestation Package download endpoint:
 
 ```
 GET https://proofregister.com/api/v1/records/:id/legal-package
@@ -183,7 +183,7 @@ Returns a zip archive conformant with this specification.
 A Legal Attestation Package is conformant with this specification if:
 
 - It contains all required files from Section 2
-- The underlying ProofBundle is conformant with PP-SPEC-003
+- The underlying ProofBundle™ is conformant with PP-SPEC-003
 - The cover document addresses all items in Section 3
 - The chain of custody records all events from bundle assembly through package delivery
 
