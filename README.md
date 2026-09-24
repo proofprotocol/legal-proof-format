@@ -10,6 +10,11 @@
 **Repository:** https://github.com/proofprotocol/legal-proof-format  
 **Published:** 2026-07-13  
 
+## Cite as
+
+Ellrod, C. (2026). PP-SPEC-010: Legal Attestation Format.
+Proof Economy Standards Alliance (PESA). https://doi.org/10.5281/zenodo.21379780
+
 ---
 
 ## Abstract
